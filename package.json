@@ -13,7 +13,8 @@
     "install:server": "cd server && npm install --include=dev",
     "build": "npm run build:client",
     "build:client": "cd client && npm run build",
-    "start": "concurrently npm:dev:client npm:dev:server"
+    "start": "concurrently npm:dev:client npm:dev:server",
+    "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "keywords": [],
   "author": "",
